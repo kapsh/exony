@@ -1,4 +1,4 @@
-# Copyright 2012 <name>
+# Copyright 2012  Nikolay Orlyuk <virkony@gmail.com>
 # Distributed under the terms of the GNU General Public License v2
 
 require mono
@@ -28,7 +28,15 @@ DEPENDENCIES="
 
 BUGS_TO="virkony@gmail.com"
 
-DEFAULT_SRC_CONFIGURE_PARAMS=( --with-db4o=included --without-indicate --without-notify --without-gtkspell --enable-engine-irc --disable-engine-{oscar,msnp,twitter,xmpp} --disable-frontend-{gnome,swf} )
+DEFAULT_SRC_CONFIGURE_PARAMS=(
+    --with-db4o=included
+    --without-indicate
+    --without-notify
+    --without-gtkspell
+    --enable-engine-irc
+    --disable-engine-{oscar,msnp,twitter,xmpp}
+    --disable-frontend-{gnome,swf}
+)
 DEFAULT_SRC_CONFIGURE_OPTION_WITHS=( dbus )
 DEFAULT_SRC_CONFIGURE_OPTION_ENABLES=( "!debug release" debug )
 
